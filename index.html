@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/colors.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/material.min.css">
+    <link rel="stylesheet" href="hightlight.js/highlight.css" type="text/css">
+    <script src="hightlight.js/highlight.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Xefili (dot) Dev</title>
+</head>
+<body>
+    <pageHead>
+        <left>
+            <el1>Xefili.dev - Documentation</el1>
+        </left>
+        <right>
+            <el1 class="isRed"><a href="/">home</a></el1>
+            <el3 class="isYellow"><a href="/blog">blog</a></el3>
+            <el4 class="isGreen"><a href="/tools">tools</a></el4>
+        </right>
+    </pageHead>
+    <h1 id="title">Welcome to the documentation!</h1>
+    <searchBox>
+        <icon><span class="isGreen">v0.0.5-a@docs.xefili.dev</span>:<span class="isPink">~</span>$</icon>
+        <input id="search" placeholder="search...">
+    </searchBox>
+    <a id="result"></a>
+    <div id="content">
+        <toc>
+            <summary id="expandable" onclick="hide(child='child')">&bull; Overview</summary>
+            <ul id="child">
+                <li>Structure</li>
+                <li>Required files</li>
+            </ul>
+            <summary onclick="hide(child='child2')">&bull; Navigation</summary>
+            <ul id="child2">
+                <li>Navbar HTML Structure</li>
+                <li>Navbar Styling</li>
+                <li>Cross-platform improvements</li>
+            </ul>
+            <summary onclick="hide(child='child3')">&bull; The pages</summary>
+            <ul id="child3">
+                <li onclick="hide(child='child4')" id="secondHeading">Homepage</li>
+                <ul id="child4">
+                    <li>Page Content Structure</li>
+                    <li>Styling & Layout</li>
+                </ul>
+                <li onclick="hide(child='child5')" id="secondHeading">Blog</li>
+                <ul id="child5">
+                    <li>Page Content Structure</li>
+                    <li>Styling & Layout</li>
+                </ul>
+            </ul>
+            <summary onclick="hide(child='child6')">&bull; Backend</summary>
+            <ul id="child6">
+                <li onclick="hide(child='child7')" id="secondHeading">Hosting</li>
+                <ul id="child7">
+                    <li>CF Pages</li>
+                    <li>Github</li>
+                    <li>Local</li>
+                </ul>
+                <li onclick="hide(child='child8')" id="secondHeading">API</li>
+                <ul id="child8">
+                    <li onclick="hide(child='child9')" id="thirdHeading">Overview</li>
+                    <ul id="child9">
+                        <li>How it works</li>
+                        <li>What program is used</li>
+                        <li>Limitations</li>
+                        <li>Usage</li>
+                    </ul>
+                </ul>
+            </ul>
+        </toc>
+        <cardBox>
+            <card>
+                <div id="col-1">
+                    <h2>The Base of the Homepage</h2>
+                    <span>
+                        This snippet shows the Navigation bar on the homepage. 
+                    </span>
+                </div>
+                <!--optional-->
+                <box><pre><code class="language-html">
+&lt;pageHead id="pageHead">
+    &lt;leftDivision>
+        &lt;logo>&lt;img id="logo" src="assets/Bucket Helper.svg" alt="Bucket Lounge Logo">&lt;/logo>
+        &lt;logoText>
+            &lt;span>Xefili.dev&lt;/span>
+        &lt;/logoText>
+    &lt;/leftDivision>
+    &lt;navBar>
+        &lt;a href="index.html">
+            &lt;home id="home">Home &lt;span class="material-symbols-outlined">home&lt;/span>&lt;/home>
+        &lt;/a>
+        &lt;a href="blog.html">
+            &lt;blog id="blog">Blog &lt;span class="material-symbols-outlined">chat&lt;/span>&lt;/Blog>
+        &lt;/a>
+        &lt;a href="https://docs.bucketlounge.tk">
+            &lt;docs id="docs">Documentation &lt;span class="material-symbols-outlined">description&lt;/span>&lt;/Docs>
+        &lt;/a>
+        &lt;a href="tools.html">
+            &lt;tools id="tools">Tools &lt;span class="material-symbols-outlined">construction&lt;/span>&lt;/search>
+        &lt;/a>
+    &lt;/navBar>
+&lt;/pageHead>
+                </code></pre></box>
+            </card>
+            <card>
+                <div>
+                    <h2>The Base of the Homepage</h2>
+                    <span>
+                        This snippet shows the Navigation bar on the homepage. 
+                    </span>
+                </div>
+                <!--optional-->
+                <box><pre><code class="language-html">
+&lt;pageHead id="pageHead">
+    &lt;leftDivision>
+        &lt;logo>&lt;img id="logo" src="assets/Bucket Helper.svg" alt="Bucket Lounge Logo">&lt;/logo>
+        &lt;logoText>
+            &lt;span>Xefili.dev&lt;/span>
+        &lt;/logoText>
+    &lt;/leftDivision>
+    &lt;navBar>
+        &lt;a href="index.html">
+            &lt;home id="home">Home &lt;span class="material-symbols-outlined">home&lt;/span>&lt;/home>
+        &lt;/a>
+        &lt;a href="blog.html">
+            &lt;blog id="blog">Blog &lt;span class="material-symbols-outlined">chat&lt;/span>&lt;/Blog>
+        &lt;/a>
+        &lt;a href="https://docs.bucketlounge.tk">
+            &lt;docs id="docs">Documentation &lt;span class="material-symbols-outlined">description&lt;/span>&lt;/Docs>
+        &lt;/a>
+        &lt;a href="tools.html">
+            &lt;tools id="tools">Tools &lt;span class="material-symbols-outlined">construction&lt;/span>&lt;/search>
+        &lt;/a>
+    &lt;/navBar>
+&lt;/pageHead>
+                </code></pre></box>
+            </card>
+        </cardBox>
+    </div>
+
+</body>
+<script type="module">
+document.getElementById("search").addEventListener("input", async() => {var query = document.getElementById("search").value;var res = await fetch(`https://api.xefili.dev/documentation?q=${query}`, {"method":"GET"});var resJSON = await res.json();let a = document.getElementById("result");a.setAttribute("href", resJSON[0].relativeLink);a.innerHTML = resJSON[0].title;})
+</script>
+<script>
+function hide(child) {
+    document.getElementById(child).classList.toggle("hidden")
+}
+</script>
+</html>   

@@ -1,0 +1,24 @@
+/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/
+pre code.hljs {
+    font-family: "Cascadia Code", "Ubuntu Mono", monospace;
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+code.hljs {
+    padding: 3px 5px
+}
+
+.hljs {
+    background: none;
+}
